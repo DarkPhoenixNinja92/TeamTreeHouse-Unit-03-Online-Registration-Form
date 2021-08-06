@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+* {
+    font-family: 'Style Script', cursive;
+}
+
+header #title {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    background-color: darkslategray;
+    color: white;
+    text-transform: capitalize;
+}
+
+#text-blurb {
+    border-bottom: 5px solid slategray;
+}
+
+header {
+    border-bottom: 1px solid slategray;
+    text-align: center;
+}
+
+#copyright {
+    text-align: center;
+    font-style: italic;
+    color: gray;
+}
+
+form {
+    color: gray;
+}
+
+button[type="submit"] {
+    color: white;
+    background-color: teal;
+    padding: 5% 25%;
+    font-size: x-large;
+}
+
+form {
+    width: 80%;
+}
+
+.subtitle {
+    background-color: lightskyblue;
+}
+
+#name,
+#email,
+#phone,
+#address,
+#city,
+#zip {
+    padding: 13px 25px;
+}
+
+#dropdown-menu {
+    padding: 13px 60px;
+}
+
+#submit-field {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+#other {
+    font-family: initial;
+}
+
+input[placeholder] {
+    text-align: right;
+}

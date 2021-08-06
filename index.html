@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Registration Form</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">The Code Review</h1>
+        <div class="subtitle">
+            <h2 id="subtitle">Signup for our newsletter</h2>
+            <p id="text-blurb">Get the latest news on how your code is doing right in your inbox</p>
+        </div>
+    </header>
+    <main>
+        <h2 id="form-title">Contact Information</h2>
+        <form action="">
+            <fieldset>
+                <label for="name">Full Name</label>
+                <input id="name" type="text" name="name" placeholder="Required" required>
+                <label for="email">Email Address</label>
+                <input id="email" type="email" name="email" placeholder="Required" required>
+                <label for="phone">Phone Number</label>
+                <input id="phone" type="number" name="phone" placeholder="Required" required>
+                <label for="address">Street Address</label>
+                <input id="address" type="text" name="address" placeholder="23456 Random Street">
+                <label for="city">City</label>
+                <input id="city" type="text" name="city" placeholder="Virginia">
+                <label for="dropdown-menu">State</label>
+                <select id="dropdown-menu" name="dropdown">
+                <option value=""></option>
+                <option value="al">AL</option>
+                <option value="ak">AK</option>
+                <option value="az">AZ</option>
+                <option value="ar">AR</option>
+                <option value="ca">CA</option>
+                <option value="co">CO</option>
+                <option value="ct">CT</option>
+                <option value="de">DE</option>
+                <option value="fl">FL</option>
+                <option value="ga">GA</option>
+                <option value="hi">HI</option>
+                <option value="id">ID</option>
+                <option value="il">IL</option>
+                <option value="in">IN</option>
+                <option value="ia">IA</option>
+                <option value="ks">KY</option>
+                <option value="la">LA</option>
+                <option value="me">ME</option>
+                <option value="md">MD</option>
+                <option value="ma">MA</option>
+                <option value="mi">MI</option>
+                <option value="mn">MN</option>
+                <option value="ms">MS</option>
+                <option value="mo">MO</option>
+                <option value="ne">NE</option>
+                <option value="nv">NV</option>
+                <option value="nh">NH</option>
+                <option value="nj">NJ</option>
+                <option value="nm">NM</option>
+                <option value="ny">NY</option>
+                <option value="nc">NC</option>
+                <option value="nd">ND</option>
+                <option value="oh">OH</option>
+                <option value="ok">OK</option>
+                <option value="or">OR</option>
+                <option value="pa">PA</option>
+                <option value="ri">RI</option>
+                <option value="sc">SC</option>
+                <option value="sd">SD</option>
+                <option value="tn">TN</option>
+                <option value="tx">TX</option>
+                <option value="ut">UT</option>
+                <option value="vt">VT</option>
+                <option value="va">VA</option>
+                <option value="wa">WA</option>
+                <option value="wv">WV</option>
+                <option value="wi">WI</option>
+                <option value="wy">WY</option>
+            </select>
+                <label for="zip">Zip Code</label>
+                <input id="zip" type="number" name="zip" placeholder="56789">
+            </fieldset>
+            <fieldset>
+                <h2>Newsletter</h2>
+                <label>Select the newsletters you would like to receive</label>
+                <br>
+                <label>HTML News</label>
+                <input id="html-news" type="checkbox" name="html-news">
+                <br>
+                <label>CSS News</label>
+                <input id="css-news" type="checkbox" name="css-news">
+                <br>
+                <label>Javascript News</label>
+                <input id="javascript-news" type="checkbox" name="javascript-news">
+            </fieldset>
+            <label>Newsletter format</label>
+            <br>
+            <label>HTML</label>
+            <input id="html-format" type="radio" name="radio-format">
+            <br>
+            <label>Plain text</label>
+            <input itemid="plaintext-format" type="radio" name="radio-format">
+            <label>Other topics you'd like to hear about</label>
+            <textarea id="other" name="other-topics" cols="30" rows="5"></textarea>
+            <div id="submit-field">
+                <button type="submit">Sign Up</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p id="copyright">Copyright The Code Review</p>
+    </footer>
+</body>
+
+</html>
