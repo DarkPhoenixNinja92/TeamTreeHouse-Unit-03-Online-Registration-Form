@@ -101,5 +101,36 @@ input[placeholder] {
 }
 
 #submit-field {
-    width: 30%;
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+}
+
+textarea {
+    width: 60vw;
+}
+
+@media only screen and (max-width: 768px) {
+    .name-div,
+    .email-div,
+    .phone-div,
+    .address-div,
+    .city-div,
+    .state-div,
+    .zip-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+    }
+    .newsletter-div {
+        text-align: left;
+    }
+    form {
+        justify-content: left;
+        align-items: flex-start;
+    }
 }
