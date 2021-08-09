@@ -12,13 +12,14 @@
 <body>
     <header>
         <h1 id="title">The Code Review</h1>
-        <div class="subtitle">
-        </div>
     </header>
     <div class="container">
         <div class="section-1">
-            <h2 id="subtitle">Signup for our newsletter</h2>
-            <p id="text-blurb">Get the latest news on how your code is doing right in your inbox</p>
+            <div class="subtitle">
+
+                <h2 id="subtitle">Signup for our newsletter</h2>
+                <p id="text-blurb">Get the latest news on how your code is doing right in your inbox</p>
+            </div>
         </div>
         <hr>
         <main>
@@ -93,6 +94,7 @@
                         <h2>Newsletter</h2>
                         <label id="newsletter-select">Select the newsletters you would like to receive</label>
                         <br>
+                        <br>
                         <div class="html-news-div">
                             <input id="html-news" type="checkbox" name="html-news">
                             <label for="html-news">HTML News</label>
@@ -107,14 +109,15 @@
                         </div>
                         <br>
                         <hr>
-                        <label>Newsletter format</label>
+                        <label class="newsletter-format">Newsletter format</label>
+                        <br>
                         <br>
                         <div class="html-format-div">
-                            <input id="html-format" type="radio" name="format-html">
+                            <input id="html-format" type="radio" name="format-radio">
                             <label for="html-format">HTML</label>
                         </div>
                         <div class="plain-format-div">
-                            <input id="plain-format" type="radio" name="format-plain">
+                            <input id="plain-format" type="radio" name="format-radio">
                             <label for="plain-format">Plain text</label>
                         </div>
                         <br>
