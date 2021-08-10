@@ -54,8 +54,12 @@
         color: white;
         text-align: center;
         background-color: teal;
-        padding: 20px 90px;
+        padding: 20px 130px;
         font-size: larger;
+    }
+    
+    textarea {
+        width: 330px;
     }
     
     input:focus,
