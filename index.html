@@ -16,120 +16,143 @@
     <div class="container">
         <div class="section-1">
             <div class="subtitle">
-
                 <h2 id="subtitle">Signup for our newsletter</h2>
                 <p id="text-blurb">Get the latest news on how your code is doing right in your inbox</p>
             </div>
         </div>
         <hr>
         <main>
-            <div class="section-2">
-                <h2 id="form-title">Contact Information</h2>
-                <form action="">
-                    <label for="name">Full Name</label>
-                    <input id="name" type="text" name="fullName" placeholder="Required" required>
-                    <label for="email">Email Address</label>
-                    <input id="email" type="email" name="email" placeholder="Required" required>
-                    <label for="phone">Phone Number</label>
-                    <input id="phone" type="number" name="phone" placeholder="Required" required>
-                    <label for="address">Street Address</label>
-                    <input id="address" type="text" name="address" placeholder="23456 Random Street">
-                    <label for="city">City</label>
-                    <input id="city" type="text" name="city" placeholder="Virginia">
-                    <label for="dropdown-menu">State</label>
-                    <select id="dropdown-menu" name="dropdown">
-                <option value=""></option>
-                <option value="al">AL</option>
-                <option value="ak">AK</option>
-                <option value="az">AZ</option>
-                <option value="ar">AR</option>
-                <option value="ca">CA</option>
-                <option value="co">CO</option>
-                <option value="ct">CT</option>
-                <option value="de">DE</option>
-                <option value="fl">FL</option>
-                <option value="ga">GA</option>
-                <option value="hi">HI</option>
-                <option value="id">ID</option>
-                <option value="il">IL</option>
-                <option value="in">IN</option>
-                <option value="ia">IA</option>
-                <option value="ks">KY</option>
-                <option value="la">LA</option>
-                <option value="me">ME</option>
-                <option value="md">MD</option>
-                <option value="ma">MA</option>
-                <option value="mi">MI</option>
-                <option value="mn">MN</option>
-                <option value="ms">MS</option>
-                <option value="mo">MO</option>
-                <option value="ne">NE</option>
-                <option value="nv">NV</option>
-                <option value="nh">NH</option>
-                <option value="nj">NJ</option>
-                <option value="nm">NM</option>
-                <option value="ny">NY</option>
-                <option value="nc">NC</option>
-                <option value="nd">ND</option>
-                <option value="oh">OH</option>
-                <option value="ok">OK</option>
-                <option value="or">OR</option>
-                <option value="pa">PA</option>
-                <option value="ri">RI</option>
-                <option value="sc">SC</option>
-                <option value="sd">SD</option>
-                <option value="tn">TN</option>
-                <option value="tx">TX</option>
-                <option value="ut">UT</option>
-                <option value="vt">VT</option>
-                <option value="va">VA</option>
-                <option value="wa">WA</option>
-                <option value="wv">WV</option>
-                <option value="wi">WI</option>
-                <option value="wy">WY</option>
-            </select>
-                    <label for="zip">Zip Code</label>
-                    <input id="zip" type="number" name="zip" placeholder="56789">
-                    <div class="newsletter-div">
-                        <h2>Newsletter</h2>
-                        <label id="newsletter-select">Select the newsletters you would like to receive</label>
-                        <br>
-                        <br>
-                        <div class="html-news-div">
-                            <input id="html-news" type="checkbox" name="html-news">
-                            <label for="html-news">HTML News</label>
+            <div class="container">
+                <div class="section-2">
+                    <form class="registration" action="index.html" method="post">
+                        <fieldset class="contact-info">
+                            <legend>Contact Information</legend>
+                            <div class="flex-pair">
+                                ​ <label for="name">Full Name</label>
+                                <input id="name" type="text" name="fullName" placeholder="Required" required>
+                            </div>
+                            <br>
+                            <div class="flex-pair">
+                                <label for="email">Email Address</label>
+                                <input id="email" type="email" name="email" placeholder="Required" required>
+                            </div>
+                            <br>
+                            <div class="flex-pair">
+                                <label for="phone">Phone Number</label>
+                                <input id="phone" type="number" name="phone" placeholder="Required" required>
+                            </div>
+                            <br>
+                            <div class="flex-pair">
+                                <label for="address">Street Address</label>
+                                <input id="address" type="text" name="address" placeholder="23456 Random Street">
+                            </div>
+                            <br>
+                            <div class="flex-pair">
+                                <label for="city">City</label>
+                                <input id="city" type="text" name="city" placeholder="City">
+                            </div>
+                            <br>
+                            <div class="flex-pair">
+                                <label for="dropdown-menu">State</label>
+                                <select id="dropdown-menu" name="dropdown">
+                                    <option disabled hidden selected>Choose State</option>
+                    <option value="al">AL</option>
+                    <option value="ak">AK</option>
+                    <option value="az">AZ</option>
+                    <option value="ar">AR</option>
+                    <option value="ca">CA</option>
+                    <option value="co">CO</option>
+                    <option value="ct">CT</option>
+                    <option value="de">DE</option>
+                    <option value="fl">FL</option>
+                    <option value="ga">GA</option>
+                    <option value="hi">HI</option>
+                    <option value="id">ID</option>
+                    <option value="il">IL</option>
+                    <option value="in">IN</option>
+                    <option value="ia">IA</option>
+                    <option value="ks">KY</option>
+                    <option value="la">LA</option>
+                    <option value="me">ME</option>
+                    <option value="md">MD</option>
+                    <option value="ma">MA</option>
+                    <option value="mi">MI</option>
+                    <option value="mn">MN</option>
+                    <option value="ms">MS</option>
+                    <option value="mo">MO</option>
+                    <option value="ne">NE</option>
+                    <option value="nv">NV</option>
+                    <option value="nh">NH</option>
+                    <option value="nj">NJ</option>
+                    <option value="nm">NM</option>
+                    <option value="ny">NY</option>
+                    <option value="nc">NC</option>
+                    <option value="nd">ND</option>
+                    <option value="oh">OH</option>
+                    <option value="ok">OK</option>
+                    <option value="or">OR</option>
+                    <option value="pa">PA</option>
+                    <option value="ri">RI</option>
+                    <option value="sc">SC</option>
+                    <option value="sd">SD</option>
+                    <option value="tn">TN</option>
+                    <option value="tx">TX</option>
+                    <option value="ut">UT</option>
+                    <option value="vt">VT</option>
+                    <option value="va">VA</option>
+                    <option value="wa">WA</option>
+                    <option value="wv">WV</option>
+                    <option value="wi">WI</option>
+                    <option value="wy">WY</option>
+                </select>
+                            </div>
+                            <br>
+                            <div class="flex-pair">
+                                <label for="zip">Zip Code</label>
+                                <input id="zip" type="number" name="zip" placeholder="56789">
+                            </div>
+                        </fieldset>
+                        <div class="newsletter-div">
+                            <h2>Newsletter</h2>
+                            <label id="newsletter-select">Select the newsletters you would like to receive</label>
+                            <br>
+                            <br>
+                            <div class="html-news-div">
+                                <input id="html-news" type="checkbox" name="html-news">
+                                <label for="html-news">HTML News</label>
+                            </div>
+                            <div class="css-news-div">
+                                <input id="css-news" type="checkbox" name="css-news">
+                                <label for="css-news">CSS News</label>
+                            </div>
+                            <div class="js-news-div">
+                                <input id="javascript-news" type="checkbox" name="javascript-news">
+                                <label for="javascript-news">Javascript News</label>
+                            </div>
+                            <br>
+                            <hr>
+                            <label class="newsletter-format">Newsletter format</label>
+                            <br>
+                            <br>
+                            <div class="html-format-div">
+                                <input id="html-format" type="radio" name="format-radio">
+                                <label for="html-format">HTML</label>
+                            </div>
+                            <div class="plain-format-div">
+                                <input id="plain-format" type="radio" name="format-radio">
+                                <label for="plain-format">Plain text</label>
+                            </div>
+                            <br>
+                            <label for="other ">Other topics you'd like to hear about</label>
+                            <br>
+                            <textarea id="other " name="other-topics" cols="30" rows="8"></textarea>
                         </div>
-                        <div class="css-news-div">
-                            <input id="css-news" type="checkbox" name="css-news">
-                            <label for="css-news">CSS News</label>
+                        <div id="submit-field">
+                            <br>
+                            <button type="submit">Sign Up</button>
                         </div>
-                        <div class="js-news-div">
-                            <input id="javascript-news" type="checkbox" name="javascript-news">
-                            <label for="javascript-news">Javascript News</label>
-                        </div>
-                        <br>
-                        <hr>
-                        <label class="newsletter-format">Newsletter format</label>
-                        <br>
-                        <br>
-                        <div class="html-format-div">
-                            <input id="html-format" type="radio" name="format-radio">
-                            <label for="html-format">HTML</label>
-                        </div>
-                        <div class="plain-format-div">
-                            <input id="plain-format" type="radio" name="format-radio">
-                            <label for="plain-format">Plain text</label>
-                        </div>
-                        <br>
-                        <label for="other ">Other topics you'd like to hear about</label>
-                        <br>
-                        <textarea id="other " name="other-topics " cols="48 " rows="5 "></textarea>
-                    </div>
-                    <div id="submit-field">
-                        <br>
-                        <button type="submit">Sign Up</button>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
         </main>
     </div>

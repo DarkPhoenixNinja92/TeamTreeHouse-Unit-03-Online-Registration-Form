@@ -1,135 +1,71 @@
     @import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
-    header #title {
-        display: flex;
-        margin: 0;
-        padding: 0;
-        justify-content: center;
-        background-color: darkslategray;
-        width: 80vw;
-        color: white;
-        text-transform: capitalize;
-        font-family: 'Markazi Text', serif;
+    * {
+        box-sizing: border-box;
     }
     
-    #text-blurb {
-        border-bottom: 5px solid slategray;
+    ​ body {
+        margin: 0 auto;
+        max-width: 768px;
+        font-family: "Raleway", sans-serif;
+        font-weight: 200;
+        background-color: #093145;
+        color: #fff;
     }
     
-    header {
-        border-bottom: 1px solid slategray;
+    ​ input {
+        border: 1px solid white;
     }
     
-    .subtitle {
-        max-width: 80vw;
-        background-color: lightskyblue;
+    .contact-info {
+        padding: 50px 20px 35px 50px;
+        max-width: 70%;
     }
     
-    label[for="name"],
-    label[for="email"],
-    label[for="phone"],
-    label[for="address"],
-    label[for="city"],
-    label[for="dropdown-menu"],
-    label[for="zip"] {
-        padding-top: 30px;
-    }
-    
-    #copyright {
-        text-align: center;
-        font-style: italic;
-        color: gray;
-    }
-    
-    form {
-        color: gray;
-    }
-    
-    button[type="submit"] {
-        color: white;
-        background-color: teal;
-        padding: 5% 25%;
-        font-size: x-large;
-    }
-    
-    form {
+    .contact-info .flex-pair {
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
     }
     
-    #name,
-    #email,
-    #phone,
-    #address,
-    #city,
-    #zip {
-        padding: 13px 25px;
+    .contact-info label {
+        margin-bottom: 10px;
+    }
+    
+    ​ .contact-info input {
+        height: 50px;
+        margin-bottom: 15px;
     }
     
     #zip {
-        width: 20%;
+        max-width: 50%;
     }
     
-    #dropdown-menu {
-        padding: 13px 90px;
-    }
-    
-    #submit-field {
-        text-align: center;
-        display: block;
-        margin: 0 auto;
-    }
-    
-    #other {
-        font-family: initial;
-        background-color: slategrey;
-    }
-    
-    input[placeholder] {
-        text-align: right;
-    }
-    
-    .html-news-div {
+    header #title {
         display: flex;
-        flex-direction: row;
+        justify-content: center;
+        padding: 20px;
+        text-transform: uppercase;
+        color: white;
+        background-color: steelblue;
+        max-width: 72%;
     }
     
-    .css-news-div {
-        display: flex;
-        flex-direction: row;
+    @media (min-width: 768px) {
+        .contact-info .flex-pair {
+            flex-direction: row;
+        }
+        .contact-info input {
+            flex-grow: 1;
+            flex-basis: 75%;
+        }
+        .contact-info label {
+            flex-basis: 25%;
+            height: 50px;
+            margin: auto 0;
+        }
+        #zip {
+            max-width: 25%;
+        }
+        #dropdown-menu {
+            min-width: 75%;
+        }
     }
-    
-    .html-format-div {
-        display: flex;
-        flex-direction: row;
-    }
-    
-    .plain-format-div {
-        display: flex;
-        flex-direction: row;
-    }
-    
-    #subtitle,
-    #text-blurb {
-        text-align: center;
-    }
-    
-    #submit-field {
-        width: 90%;
-        text-align: left;
-    }
-    
-    footer {
-        text-align: center;
-    }
-    
-    textarea {
-        width: 78vw;
-    }
-    
-    .section-2 {
-        max-width: 95vw;
-    }
-    
-    @media only screen and (max-width: 768px) {}
