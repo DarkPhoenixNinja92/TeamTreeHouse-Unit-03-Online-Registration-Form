@@ -18,7 +18,7 @@
     
     .contact-info {
         padding: 50px 20px 35px 50px;
-        max-width: 70%;
+        max-width: 100%;
     }
     
     .contact-info .flex-pair {
@@ -46,7 +46,24 @@
         text-transform: uppercase;
         color: white;
         background-color: steelblue;
-        max-width: 72%;
+        max-width: 100%;
+        font-size: medium;
+    }
+    
+    button {
+        color: white;
+        text-align: center;
+        background-color: teal;
+        padding: 20px 90px;
+        font-size: larger;
+    }
+    
+    input:focus,
+    select:focus,
+    textarea:focus {
+        box-shadow: 0 0 2px 3px #78aeda, 0 0 2px #78aeda inset;
+        border-radius: 3px;
+        transition: width 2s linear 1s;
     }
     
     @media (min-width: 768px) {
@@ -67,5 +84,14 @@
         }
         #dropdown-menu {
             min-width: 75%;
+        }
+        button {
+            padding: 20px 230px;
+        }
+        textarea {
+            width: 520px;
+        }
+        footer {
+            text-align: center;
         }
     }
