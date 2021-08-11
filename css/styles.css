@@ -1,12 +1,8 @@
     @import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
-    * {
-        box-sizing: border-box;
-    }
-    
     ​ body {
         margin: 0 auto;
         max-width: 768px;
-        font-family: "Raleway", sans-serif;
+        font-family: "Markazi Text", sans-serif;
         font-weight: 200;
         background-color: #093145;
         color: #fff;
@@ -14,6 +10,10 @@
     
     ​ input {
         border: 1px solid white;
+    }
+    
+    input[placeholder] {
+        text-align: right;
     }
     
     .contact-info {
@@ -45,7 +45,7 @@
         padding: 20px;
         text-transform: uppercase;
         color: white;
-        background-color: steelblue;
+        background-color: rgb(27, 150, 172);
         max-width: 100%;
         font-size: medium;
     }
@@ -54,20 +54,26 @@
         color: white;
         text-align: center;
         background-color: teal;
-        padding: 20px 130px;
-        font-size: larger;
+        padding: 20px 150px;
+        font-size: 15px;
     }
     
     textarea {
-        width: 330px;
+        width: 360px;
+    }
+    
+    input {
+        padding: 22px;
+    }
+    
+    #dropdown-menu {
+        min-height: 62px;
     }
     
     input:focus,
     select:focus,
     textarea:focus {
         box-shadow: 0 0 2px 3px #78aeda, 0 0 2px #78aeda inset;
-        border-radius: 3px;
-        transition: width 2s linear 1s;
     }
     
     @media (min-width: 768px) {
@@ -90,10 +96,16 @@
             min-width: 75%;
         }
         button {
-            padding: 20px 230px;
+            padding: 20px 275px;
+            margin-left: 60px;
+            font-size: large;
+        }
+        label[for="other"] {
+            margin-left: 60px;
         }
         textarea {
-            width: 520px;
+            width: 620px;
+            margin-left: 60px;
         }
         footer {
             text-align: center;
