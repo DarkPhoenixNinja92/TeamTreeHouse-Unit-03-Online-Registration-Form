@@ -76,7 +76,7 @@
         box-shadow: 0 0 2px 3px #78aeda, 0 0 2px #78aeda inset;
     }
     
-    @media (min-width: 768px) {
+    @media screen and (min-width: 768px) {
         .contact-info .flex-pair {
             flex-direction: row;
         }
