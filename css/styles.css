@@ -1,5 +1,9 @@
     @import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
-    ​ body {
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
         margin: 0 auto;
         max-width: 768px;
         font-family: "Markazi Text", sans-serif;
@@ -8,7 +12,7 @@
         color: #fff;
     }
     
-    ​ input {
+    input {
         border: 1px solid white;
     }
     
@@ -18,7 +22,11 @@
     
     .contact-info {
         padding: 50px 20px 35px 50px;
-        max-width: 100%;
+        max-width: 98%;
+    }
+    
+    .newsletter {
+        max-width: 98%;
     }
     
     .contact-info .flex-pair {
@@ -30,7 +38,7 @@
         margin-bottom: 10px;
     }
     
-    ​ .contact-info input {
+    .contact-info input {
         height: 50px;
         margin-bottom: 15px;
     }
@@ -45,7 +53,7 @@
         padding: 20px;
         text-transform: uppercase;
         color: white;
-        background-color: rgb(27, 150, 172);
+        background-color: steelblue;
         max-width: 100%;
         font-size: medium;
     }
@@ -54,12 +62,12 @@
         color: white;
         text-align: center;
         background-color: teal;
-        padding: 20px 150px;
+        padding: 20px 135px;
         font-size: 15px;
     }
     
     textarea {
-        width: 360px;
+        width: 330px;
     }
     
     input {
@@ -74,9 +82,10 @@
     select:focus,
     textarea:focus {
         box-shadow: 0 0 2px 3px #78aeda, 0 0 2px #78aeda inset;
+        border-radius: 3px;
     }
     
-    @media screen and (min-width: 768px) {
+    @media (min-width: 768px) {
         .contact-info .flex-pair {
             flex-direction: row;
         }
