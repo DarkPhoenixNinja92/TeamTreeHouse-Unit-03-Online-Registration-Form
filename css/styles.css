@@ -68,10 +68,16 @@
     
     textarea {
         width: 330px;
+        transition: width 2s;
     }
     
     input {
         padding: 22px;
+        transition: width 2s;
+    }
+    
+    select {
+        transition: width 2s;
     }
     
     #dropdown-menu {
@@ -83,6 +89,7 @@
     textarea:focus {
         box-shadow: 0 0 2px 3px #78aeda, 0 0 2px #78aeda inset;
         border-radius: 3px;
+        width: 110%;
     }
     
     @media (min-width: 768px) {
