@@ -1,129 +1,127 @@
-    @import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
-    * {
-        box-sizing: border-box;
-    }
-    
-    body {
-        margin: 0 auto;
-        max-width: 768px;
-        font-family: "Markazi Text", sans-serif;
-        font-weight: 200;
-        background-color: #093145;
-        color: #fff;
-    }
-    
-    input {
-        border: 1px solid white;
-    }
-    
-    input[placeholder] {
-        text-align: right;
-    }
-    
-    .contact-info {
-        padding: 50px 20px 35px 50px;
-        max-width: 98%;
-    }
-    
-    .newsletter {
-        max-width: 98%;
-    }
-    
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: "Markazi Text", sans-serif;
+    font-weight: 200;
+    background-color: #093145;
+    color: #fff;
+}
+
+input,
+textarea,
+select,
+fieldset {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 768px;
+}
+
+input {
+    border: 1px solid white;
+}
+
+input::placeholder {
+    text-align: right;
+}
+
+.contact-info .flex-pair {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info label {
+    margin-bottom: 10px;
+}
+
+.contact-info input,
+select {
+    height: 50px;
+}
+
+#zip {
+    max-width: 50%;
+}
+
+header #title {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    text-transform: uppercase;
+    color: white;
+    background-color: steelblue;
+    max-width: 100%;
+    font-size: medium;
+}
+
+.subtitle {
+    text-align: center;
+    padding-top: 25px;
+}
+
+hr {
+    margin: 25px 0;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    margin: 15px 0;
+}
+
+button {
+    color: white;
+    text-align: center;
+    background-color: teal;
+    padding: 20px;
+    font-size: 15px;
+    width: 100%;
+}
+
+input {
+    padding: 22px;
+}
+
+input,
+select,
+textarea {
+    box-shadow: 0 0 2px 3px transparent, 0 0 2px transparent inset;
+    transition: box-shadow .7s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    box-shadow: 0 0 2px 3px #78aeda, 0 0 2px #78aeda inset;
+    border-radius: 3px;
+}
+
+footer {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
     .contact-info .flex-pair {
-        display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
-    
+    .contact-info input,
+    .contact-info select {
+        flex-grow: 1;
+        flex-basis: 75%;
+    }
     .contact-info label {
-        margin-bottom: 10px;
+        flex-basis: 25%;
+        margin: auto 0;
     }
-    
-    .contact-info input {
-        height: 50px;
-        margin-bottom: 15px;
-    }
-    
     #zip {
-        max-width: 50%;
+        max-width: 25%;
     }
-    
-    header #title {
-        display: flex;
-        justify-content: center;
-        padding: 20px;
-        text-transform: uppercase;
-        color: white;
-        background-color: steelblue;
-        max-width: 100%;
-        font-size: medium;
-    }
-    
-    button {
-        color: white;
-        text-align: center;
-        background-color: teal;
-        padding: 20px 135px;
-        font-size: 15px;
-    }
-    
-    textarea {
-        width: 330px;
-        transition: width 2s;
-    }
-    
-    input {
-        padding: 22px;
-        transition: width 2s;
-    }
-    
-    select {
-        transition: width 2s;
-    }
-    
-    #dropdown-menu {
-        min-height: 62px;
-    }
-    
-    input:focus,
-    select:focus,
-    textarea:focus {
-        box-shadow: 0 0 2px 3px #78aeda, 0 0 2px #78aeda inset;
-        border-radius: 3px;
-        width: 110%;
-    }
-    
-    @media (min-width: 768px) {
-        .contact-info .flex-pair {
-            flex-direction: row;
-        }
-        .contact-info input {
-            flex-grow: 1;
-            flex-basis: 75%;
-        }
-        .contact-info label {
-            flex-basis: 25%;
-            height: 50px;
-            margin: auto 0;
-        }
-        #zip {
-            max-width: 25%;
-        }
-        #dropdown-menu {
-            min-width: 75%;
-        }
-        button {
-            padding: 20px 275px;
-            margin-left: 60px;
-            font-size: large;
-        }
-        label[for="other"] {
-            margin-left: 60px;
-        }
-        textarea {
-            width: 620px;
-            margin-left: 60px;
-        }
-        footer {
-            text-align: center;
-        }
-    }
+}
